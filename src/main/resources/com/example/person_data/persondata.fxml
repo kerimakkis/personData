@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.person_data.Controller">
+   <children>
+      <Button fx:id="btnSpeichern" layoutX="390.0" layoutY="487.0" mnemonicParsing="false" onAction="#onButtonClicked" text="speichern" />
+      <Button fx:id="btnAbbrechen" layoutX="487.0" layoutY="487.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Abbrechen" />
+      <TableView layoutX="36.0" layoutY="70.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="clmName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="clmNachname" prefWidth="75.0" text="Nachname" />
+            <TableColumn fx:id="clmLand" prefWidth="75.0" text="Land" />
+            <TableColumn fx:id="clmStadt" prefWidth="75.0" text="Stadt" />
+            <TableColumn fx:id="clmStrasse" prefWidth="75.0" text="Strasse" />
+            <TableColumn fx:id="clmHausnummer" prefWidth="75.0" text="H.Nummer" />
+            <TableColumn fx:id="clmPlz" text="Plz" />
+        </columns>
+      </TableView>
+      <Label layoutX="251.0" layoutY="40.0" text="Personen Daten" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="96.0" layoutY="354.0" promptText="Name" />
+      <TextField fx:id="txtNachname" layoutX="97.0" layoutY="392.0" promptText="Nachname" />
+      <TextField fx:id="txtLand" layoutX="96.0" layoutY="434.0" promptText="Land" />
+      <TextField fx:id="txtStadt" layoutX="96.0" layoutY="474.0" promptText="Stadt" />
+      <TextField fx:id="txtStrasse" layoutX="388.0" layoutY="354.0" promptText="Strasse" />
+      <TextField fx:id="txtHausnummer" layoutX="389.0" layoutY="392.0" promptText="Hausnummer" />
+      <TextField fx:id="txtPlz" layoutX="390.0" layoutY="434.0" promptText="Postleitzahl" />
+      <Button fx:id="btnZeigen" layoutX="498.0" layoutY="286.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Zeigen" />
+      <Label layoutX="271.0" layoutY="321.0" text=" Daten Eingabe">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVerbindung" layoutX="109.0" layoutY="286.0" mnemonicParsing="false" onAction="#onButtonClicked" text="verbinden" />
+   </children>
+</AnchorPane>

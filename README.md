@@ -72,7 +72,7 @@ Die Anwendung bietet:
   - Verbinden
 
 ## Entwickler
-- [Ihr Name]
+
 
 ## Lizenz
 

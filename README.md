@@ -75,4 +75,4 @@ Die Anwendung bietet:
 - [Ihr Name]
 
 ## Lizenz
-[Ihre Lizenz]
+
